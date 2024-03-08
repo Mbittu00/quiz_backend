@@ -12,7 +12,11 @@ app.use(Express.json());
 
 connectDB()
 
+app.get('/test',(req,res)=>{
+    res.send('Hello World!')
+})
+
 app.use("/",main);
 app.use("/pre",Pre)
 
-app.listen(8080,console.log("http://192.168.31.77:8080"));
+app.listen(8080,console.log("https://quiz-backend-sigma-hazel.vercel.app/:8080"));
