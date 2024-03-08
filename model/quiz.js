@@ -11,6 +11,9 @@ const quiz=new Schema({
     score:{
         type:Array,
         default:[]
+    },qustionsId:{
+        type:String,
+        required:true
     }
 })
 quiz.index({ expireAt: 1 }, { expireAfterSeconds:  120});
